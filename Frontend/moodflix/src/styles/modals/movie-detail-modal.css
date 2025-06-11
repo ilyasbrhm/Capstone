@@ -1,0 +1,580 @@
+/* Styles untuk Modal Overlay */
+.movie-detail-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Styles untuk Modal Content */
+.movie-detail-modal-content {
+  background: linear-gradient(to bottom, #000957, #fdf567);
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  margin: 20px;
+}
+
+/* Styles untuk Movie Info Container */
+.movie-info-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Styles untuk Movie Poster */
+.movie-poster-container {
+  flex-shrink: 0;
+}
+
+.movie-poster {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Styles untuk Movie Details */
+.movie-details {
+  flex: 1;
+}
+
+.movie-title {
+  margin-top: 0;
+  font-size: 26px;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.movie-divider {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.movie-genre-container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+
+.movie-genre-label {
+  color: #333;
+}
+
+.movie-genre {
+  color: #6f42c1;
+}
+
+.movie-info-grid {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.movie-info-item {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.movie-info-label {
+  color: #333;
+}
+
+.movie-release-year {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.movie-rating {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.movie-synopsis-container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.movie-synopsis-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* Styles untuk Comments Section */
+.movie-comments-section {
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 20px;
+}
+
+.movie-comments-title {
+  margin-bottom: 15px;
+}
+
+.add-comment-container {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.add-comment-title {
+  margin: 0 0 10px 0;
+  color: #000957;
+}
+
+.comment-textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border: 1px solid #000957;
+  border-radius: 5px;
+  resize: vertical;
+  font-family: inherit;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.submit-comment-btn {
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-required-container {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+}
+
+.login-required-text {
+  margin: 0;
+  color: #856404;
+}
+
+.comments-loading {
+  text-align: center;
+  color: #666;
+  padding: 20px;
+}
+
+.comments-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.no-comments-container {
+  text-align: center;
+  color: #666;
+  padding: 20px;
+}
+
+.comments-error-container {
+  text-align: center;
+  color: #e74c3c;
+  padding: 20px;
+}
+
+/* Styles untuk Comment Item */
+.comment-item {
+  border: 1px solid #eee;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.comment-username {
+  color: #495057;
+}
+
+.comment-date {
+  color: #6c757d;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-comment-btn {
+  background: #FF8400;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.delete-comment-btn {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.comment-text {
+  line-height: 1.5;
+  color: #495057;
+}
+
+.edit-form {
+  display: none;
+  margin-top: 10px;
+}
+
+.edit-textarea {
+  width: 100%;
+  min-height: 60px;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+}
+
+.save-edit-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+  font-size: 12px;
+}
+
+.cancel-edit-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Styles untuk Close Button */
+.close-detail-btn {
+  position: absolute;
+  top: 35px;
+  right: 230px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+  z-index: 10;
+}
+
+/* Styles untuk Loading Modal */
+.loading-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Styles untuk Movie Card */
+.movie-card {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  overflow: hidden;
+  width: 420px;
+  min-height: 220px;
+  cursor: default;
+  transition: box-shadow 0.2s;
+}
+
+.movie-card-poster {
+  width: 140px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+  background: #eee;
+}
+
+.movie-card-content {
+  padding: 20px;
+  flex: 1;
+  text-align: left;
+}
+
+.movie-card-title {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.movie-card-year {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  color: #666;
+}
+
+.movie-card-rating {
+  margin: 0 0 16px 0;
+  font-size: 15px;
+  color: #666;
+}
+
+.movie-detail-btn {
+  padding: 8px 18px;
+  background: #0014BD;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Media Queries untuk Responsivitas */
+@media screen and (max-width: 992px) {
+  .movie-detail-modal-content {
+    width: 95%;
+    padding: 25px;
+  }
+  
+  .close-detail-btn {
+    right: 30px;
+  }
+  
+  .movie-card {
+    width: 100%;
+    max-width: 380px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movie-detail-modal-content {
+    padding: 20px;
+    margin: 15px;
+  }
+  
+  .movie-info-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .movie-poster-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .movie-poster {
+    width: 180px;
+    height: 270px;
+  }
+  
+  .movie-details {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .movie-title {
+    font-size: 22px;
+  }
+  
+  .close-detail-btn {
+    top: 25px;
+    right: 25px;
+  }
+  
+  .movie-card {
+    width: 100%;
+    max-width: 350px;
+    min-height: 200px;
+  }
+  
+  .movie-card-poster {
+    width: 120px;
+    height: 180px;
+  }
+  
+  .movie-card-content {
+    padding: 15px;
+  }
+  
+  .movie-card-title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .movie-detail-modal-content {
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  .movie-info-container {
+    padding: 15px;
+  }
+  
+  .movie-poster {
+    width: 150px;
+    height: 225px;
+  }
+  
+  .movie-title {
+    font-size: 20px;
+  }
+  
+  .movie-info-grid {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .add-comment-container,
+  .login-required-container {
+    padding: 12px;
+  }
+  
+  .comment-item {
+    padding: 12px;
+  }
+  
+  .comment-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .comment-actions {
+    margin-top: 8px;
+  }
+  
+  .close-detail-btn {
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+  }
+  
+  .movie-card {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .movie-card-poster {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .movie-card-content {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .movie-poster {
+    width: 130px;
+    height: 195px;
+  }
+  
+  .movie-title {
+    font-size: 18px;
+  }
+  
+  .movie-genre-container,
+  .movie-info-item,
+  .movie-synopsis-container {
+    padding: 10px;
+  }
+  
+  .edit-comment-btn,
+  .delete-comment-btn {
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+  
+  .save-edit-btn,
+  .cancel-edit-btn {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,134 @@
+@import './modal.css';
+
+.recommendations-modal {
+  background: linear-gradient(to bottom, #0014BD, #FAFFAF);
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  position: relative;
+}
+
+.recommendations-modal h2 {
+  margin-bottom: 10px;
+  color: #FFEB00;
+}
+
+.recommendations-modal p {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.slider-nav {
+  background: transparent;
+  border: none;
+  color: #000957;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.slider-nav:hover {
+  color: #FFEB00;
+}
+
+.movie-card-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.movie-card {
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 450px;
+  min-height: 220px;
+  cursor: default;
+  transition: box-shadow 0.2s;
+  border: 1px solid #ccc;
+}
+
+.movie-card img {
+  width: 140px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #eee;
+  margin: 5px;
+  border: 1px solid;
+}
+
+.movie-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 120px;
+  padding-bottom: 12px;
+}
+
+.movie-card-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.movie-card-content p {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  color: #666;
+}
+
+.movie-card-content .rating {
+  margin: 0 0 10px 0;
+  font-size: 15px;
+  color: black;
+}
+
+.movie-detail-btn, .detail-button {
+  display: inline-block !important;
+  opacity: 1 !important;
+  margin-top: 12px;
+  z-index: 2;
+  position: relative;
+}
+
+.detail-button {
+  padding: 5px 14px;
+  width: 80px;
+  background: #000957;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.detail-button:hover {
+  background: #0014BD;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+}

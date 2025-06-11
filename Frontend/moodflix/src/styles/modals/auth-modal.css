@@ -1,0 +1,26 @@
+@import './modal.css';
+
+.auth-modal {
+  background: linear-gradient(to bottom, #263784, #000957);
+  max-width: 400px;
+}
+
+.auth-modal h2 {
+  margin-bottom: 20px;
+  color: #FFEB00;
+}
+
+.auth-modal p {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.auth-modal .login-button {
+  background: #007bff;
+  margin-right: 10px;
+}
+
+.auth-modal .register-button {
+  background: #28a745;
+  margin-right: 10px;
+}
