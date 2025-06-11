@@ -1,6 +1,6 @@
 # Implementasi Algoritma Machine Learning pada Sistem Rekomendasi Film Berbasis Website Interaktif - Moodflix 
 
-    MoodFlix adalah aplikasi web yang memberikan rekomendasi film berdasarkan suasana hati (mood) pengguna. Aplikasi ini dikembangkan untuk menjawab tantangan umum dalam memilih film yang sesuai dengan kondisi emosional, dengan menggabungkan teknologi kecerdasan buatan, desain antarmuka modern, dan arsitektur sistem yang efisien.
+MoodFlix adalah aplikasi web yang memberikan rekomendasi film berdasarkan suasana hati (mood) pengguna. Aplikasi ini dikembangkan untuk menjawab tantangan umum dalam memilih film yang sesuai dengan kondisi emosional, dengan menggabungkan teknologi kecerdasan buatan, desain antarmuka modern, dan arsitektur sistem yang efisien.
 
   Proyek ini melibatkan tiga jalur keahlian utama:
 
