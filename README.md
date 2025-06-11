@@ -1,6 +1,16 @@
 # Implementasi Algoritma Machine Learning pada Sistem Rekomendasi Film Berbasis Website Interaktif - Moodflix 
 
-    Blom diisi nih ges summary projectnya tolong
+    MoodFlix adalah aplikasi web yang memberikan rekomendasi film berdasarkan suasana hati (mood) pengguna. Aplikasi ini dikembangkan untuk menjawab tantangan umum dalam memilih film yang sesuai dengan kondisi emosional, dengan menggabungkan teknologi kecerdasan buatan, desain antarmuka modern, dan arsitektur sistem yang efisien.
+
+    Proyek ini melibatkan tiga jalur keahlian utama:
+
+    Machine Learning: Menggunakan content-based filtering dengan TensorFlow dan data dari TMDB. Proses mencakup web scraping, data preprocessing, dan TF-IDF/embedding untuk menghasilkan rekomendasi berbasis mood. Model di-deploy dalam format TensorFlow Lite dan TensorFlow.js untuk inference real-time.
+
+    Front-End Development: Dibangun dengan desain yang responsif dan intuitif, antarmuka terhubung secara dinamis ke backend melalui API untuk menampilkan hasil rekomendasi secara real-time.
+
+    Back-End Development: Dua RESTful API dikembangkan dengan HAPI (untuk frontend) dan Flask (untuk model ML). Sistem diuji dengan Postman dan di-deploy di Railway, memastikan komunikasi data yang efisien dan cepat.
+
+    MoodFlix merupakan hasil kolaborasi lintas disiplin yang mengedepankan fungsionalitas dan personalisasi, memberikan pengalaman menonton yang lebih relevan, empatik, dan menyenangkan bagi pengguna.
 
 ## Tools
 
