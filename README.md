@@ -913,3 +913,4 @@ moodflix/
 
 ### Hosting 
 Menggunakan Netlify
+https://sparkling-flan-0579b7.netlify.app/#/home
