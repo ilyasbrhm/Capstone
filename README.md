@@ -2,14 +2,14 @@
 
 MoodFlix adalah aplikasi web yang memberikan rekomendasi film berdasarkan suasana hati (mood) pengguna. Aplikasi ini dikembangkan untuk menjawab tantangan umum dalam memilih film yang sesuai dengan kondisi emosional, dengan menggabungkan teknologi kecerdasan buatan, desain antarmuka modern, dan arsitektur sistem yang efisien.
 
-  Proyek ini melibatkan tiga jalur keahlian utama:
+    (Machine Learning) MC009D5Y2044 - Ilyas Imam Ibrahim 
+    (Machine Learning) MC009D5X2016 - Azzahra Dania Indriyani
+    (Machine Learning) MC009D5Y0865 - Mochamad Rizqi Erlangga 
+    (Frontend Backend) FC009D5X0347 - Dellia Putri Santoso 
+    (Frontend Backend) FC009D5X0666 - Elsa Rizkita Febryanti 
+    (Frontend Backend) FC009D5X2287 - Nisrina Syifa 
 
-(Machine Learning) MC009D5Y2044 - Ilyas Imam Ibrahim 
-(Machine Learning) MC009D5X2016 - Azzahra Dania Indriyani
-(Machine Learning) MC009D5Y0865 - Mochamad Rizqi Erlangga 
-(Frontend Backend) FC009D5X0347 - Dellia Putri Santoso 
-(Frontend Backend) FC009D5X0666 - Elsa Rizkita Febryanti 
-(Frontend Backend) FC009D5X2287 - Nisrina Syifa 
+  Proyek ini melibatkan tiga jalur keahlian utama:
 
 - Machine Learning: Menggunakan content-based filtering dengan TensorFlow dan data dari TMDB. Proses mencakup web scraping, data preprocessing, dan TF-IDF/embedding untuk menghasilkan rekomendasi berbasis mood. Model di-deploy dalam format TensorFlow Lite dan TensorFlow.js untuk inference real-time.
 
